@@ -9,4 +9,4 @@ base32:
 	gcc -o MurmurHash3.so -fPIC -shared MurmurHash3.cpp MurmurHash3_wrapper.cpp
 
 mac:
-	g++ -o MurmurHash3.dylib -fPIC -shared MurmurHash3.cpp MurmurHash3_wrapper.cpp
+	gcc -arch i386 -arch x86_64 -lstdc++ -o MurmurHash3.so -fPIC -shared MurmurHash3.cpp MurmurHash3_wrapper.cpp
