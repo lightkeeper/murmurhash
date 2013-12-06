@@ -5,8 +5,14 @@ all: base64
 base64:
 	gcc -o MurmurHash3.so -DPLATFORM64 -fPIC -shared MurmurHash3.cpp MurmurHash3_wrapper.cpp
 
+base64Debug:
+	gcc -g -o MurmurHash3.so -DPLATFORM64 -fPIC -shared MurmurHash3.cpp MurmurHash3_wrapper.cpp
+
 base32:
 	gcc -o MurmurHash3.so -fPIC -shared MurmurHash3.cpp MurmurHash3_wrapper.cpp
+
+base32:
+	gcc -g -o MurmurHash3.so -fPIC -shared MurmurHash3.cpp MurmurHash3_wrapper.cpp
 
 mac:
 	gcc -arch i386 -arch x86_64 -lstdc++ -o MurmurHash3.so -fPIC -shared MurmurHash3.cpp MurmurHash3_wrapper.cpp
