@@ -3,6 +3,7 @@
 
 #include "MurmurHash3.h"
 
+
 // Microsoft Visual Studio
 #if defined(_MSC_VER)
 
@@ -16,7 +17,7 @@
 #endif
 
 extern "C" {
-   PREFIX void MurmurHash3_128_wrapper(const void *key, uint32_t len, uint32_t seed, void *out);
+  PREFIX void MurmurHash3_128_wrapper(const void *key, uint32_t len, uint32_t seed, void *out);
 }
 
 
