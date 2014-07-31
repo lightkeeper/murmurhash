@@ -15,4 +15,4 @@ base32:
 	gcc -g -o MurmurHash3.so -fPIC -shared -std=c++0x MurmurHash3.cpp order.cpp MurmurHash3_wrapper.cpp  -lstdc++
 
 mac:
-	gcc -arch i386 -arch x86_64 -std=c++0x -lstdc++ -o MurmurHash3.so -fPIC -shared MurmurHash3.cpp order.cpp MurmurHash3_wrapper.cpp -lstdc++
+	$(CC) -arch i386 -arch x86_64 -std=c++0x -lstdc++ -o MurmurHash3.so -fPIC -shared MurmurHash3.cpp order.cpp MurmurHash3_wrapper.cpp -lstdc++
