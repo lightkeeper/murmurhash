@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Hashes">
+      <UniqueIdentifier>{0fe05ae7-c065-45d3-94f5-274f48d3acdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{22d7154a-522a-4201-be63-1f6cf31e47cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{31999c06-3387-4e7e-bd03-a00f3ee3e9c2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="City.cpp">
+      <Filter>Hashes</Filter>
+    </ClCompile>
+    <ClCompile Include="crc.cpp">
+      <Filter>Hashes</Filter>
+    </ClCompile>
+    <ClCompile Include="Hashes.cpp">
+      <Filter>Hashes</Filter>
+    </ClCompile>
+    <ClCompile Include="lookup3.cpp">
+      <Filter>Hashes</Filter>
+    </ClCompile>
+    <ClCompile Include="md5.cpp">
+      <Filter>Hashes</Filter>
+    </ClCompile>
+    <ClCompile Include="MurmurHash1.cpp">
+      <Filter>Hashes</Filter>
+    </ClCompile>
+    <ClCompile Include="MurmurHash2.cpp">
+      <Filter>Hashes</Filter>
+    </ClCompile>
+    <ClCompile Include="MurmurHash3.cpp">
+      <Filter>Hashes</Filter>
+    </ClCompile>
+    <ClCompile Include="sha1.cpp">
+      <Filter>Hashes</Filter>
+    </ClCompile>
+    <ClCompile Include="SuperFastHash.cpp">
+      <Filter>Hashes</Filter>
+    </ClCompile>
+    <ClCompile Include="AvalancheTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Bitslice.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="DifferentialTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="KeysetTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="SpeedTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Bitvec.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Random.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Stats.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Types.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="order.cpp">
+      <Filter>Hashes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="City.h">
+      <Filter>Hashes</Filter>
+    </ClInclude>
+    <ClInclude Include="Hashes.h">
+      <Filter>Hashes</Filter>
+    </ClInclude>
+    <ClInclude Include="MurmurHash1.h">
+      <Filter>Hashes</Filter>
+    </ClInclude>
+    <ClInclude Include="MurmurHash2.h">
+      <Filter>Hashes</Filter>
+    </ClInclude>
+    <ClInclude Include="MurmurHash3.h">
+      <Filter>Hashes</Filter>
+    </ClInclude>
+    <ClInclude Include="sha1.h">
+      <Filter>Hashes</Filter>
+    </ClInclude>
+    <ClInclude Include="AvalancheTest.h">
+      <Filter>Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="DifferentialTest.h">
+      <Filter>Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="KeysetTest.h">
+      <Filter>Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="SpeedTest.h">
+      <Filter>Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="Bitvec.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="pstdint.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Stats.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Types.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -19,6 +19,7 @@ ipch/
 #ignore random visual studio stuff
 *.opensdf
 *.sln.old
-*.vcxproj*
+*.suo
+*.vcxproj.user
 *.sdf
-UpgradeLog.XML
+UpgradeLog*
