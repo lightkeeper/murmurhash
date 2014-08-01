@@ -73,9 +73,8 @@
       <Filter>Utils</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="order.cpp">
-      <Filter>Hashes</Filter>
-    </ClCompile>
+    <ClCompile Include="MurmurHash3_wrapper.cpp" />
+    <ClCompile Include="order.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="City.h">

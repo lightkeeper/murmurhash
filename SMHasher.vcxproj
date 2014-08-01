@@ -176,6 +176,7 @@
     <ClCompile Include="MurmurHash1.cpp" />
     <ClCompile Include="MurmurHash2.cpp" />
     <ClCompile Include="MurmurHash3.cpp" />
+    <ClCompile Include="MurmurHash3_wrapper.cpp" />
     <ClCompile Include="order.cpp" />
     <ClCompile Include="sha1.cpp" />
     <ClCompile Include="SuperFastHash.cpp" />
