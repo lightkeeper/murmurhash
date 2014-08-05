@@ -4,6 +4,7 @@ all: base64
 
 base64:
 	gcc -o MurmurHash3.so -DPLATFORM64 -fPIC -shared -std=c++0x MurmurHash3.cpp order.cpp MurmurHash3_wrapper.cpp -lstdc++
+	gcc -o order_tests -DPLATFORM64 -std=c++0x order_tests.cpp order.cpp -lstdc++
 
 base64Debug:
 	gcc -g -o MurmurHash3.so -DPLATFORM64 -fPIC -shared -std=c++0x MurmurHash3.cpp order.cpp MurmurHash3_wrapper.cpp -lstdc++
