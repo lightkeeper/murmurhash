@@ -17,11 +17,11 @@ std::vector<std::string> random_string(int size)
   return ans;
 }
 
-std::vector<long> random_long(int size)
+std::vector<bigOrder> random_long(int size)
 {
-  std::vector<long> ans(size);
+	std::vector<bigOrder> ans(size);
   std::default_random_engine generator;
-  std::uniform_int_distribution<long> distribution(1,100);
+  std::uniform_int_distribution<bigOrder> distribution(1, 100);
   for (int i=0; i < size; i++) {
     ans[i] = distribution(generator);
   }
@@ -53,7 +53,7 @@ bool test_stringlong(int size)
   for (int i=0; i < size; i++) {
     x[i] = strvec[i].c_str();
   }
-  std::vector<long> lngvec = random_long(size);
+  std::vector<bigOrder> lngvec = random_long(size);
   std::vector<int> order(size);
   OrderC_stringdate(&order[0], &x[0], &lngvec[0], size, 1);
   for (int i=1; i < size; i++) {
@@ -65,9 +65,27 @@ bool test_stringlong(int size)
   
 }
 
+bool test_long(int size)
+{
+	bool ans = true;
+	std::vector<bigOrder> x = random_long(size);
+	std::vector<int> order(size);
+	OrderC_long(&order[0], &x[0], size, 1);
+	for (int i = 1; i < size; i++) {
+		// printf("%s %i\n", x[order[i]], (int) ans);
+		ans = ans && (x[order[i]] >= x[order[i - 1]]);
+	}
+	return ans;
+}
+
+
 int main(int argc, char**argv)
 {
-  int size = 100000;
+  int size = 20;
+
+  printf("sizeof(int) = %d sizeof(long) = %d sizeof(bigOrder) = %d\n", sizeof(int), sizeof(long), sizeof(bigOrder));
+
+  printf("test_long = %s\n", test_long(size) ? "true" : "false");
   printf("test_string = %s\n", test_string(size) ? "true" : "false");
   printf("test_stringlong = %s\n", test_stringlong(size) ? "true" : "false");
 }

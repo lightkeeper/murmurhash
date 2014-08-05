@@ -10,7 +10,7 @@ void OrderC_int(int* order, int* x, int len, int asc)
    }
 }  
 
-void OrderC_long(int* order, long* x, int len, int asc)
+void OrderC_long(int* order, bigOrder* x, int len, int asc)
 {   
    for (int i=0; i < len; i++) {order[i] = i;}
    if (asc) {
@@ -51,7 +51,7 @@ void OrderC_double2(int *order, double *x, double *y, int len, int asc)
    }
 }  
 
-void OrderC_stringdate(int *order, const char **x, long *y, int len, int asc)
+void OrderC_stringdate(int *order, const char **x, bigOrder *y, int len, int asc)
 {   
   std::vector<std::string> str(len);
   for (int i=0; i < len; i++) {order[i] = i; str[i] = x[i];}
@@ -62,7 +62,7 @@ void OrderC_stringdate(int *order, const char **x, long *y, int len, int asc)
   }
 }  
 
-void OrderC_wstringdate(int *order, const wchar_t **x, long *y, int len, int asc)
+void OrderC_wstringdate(int *order, const wchar_t **x, bigOrder *y, int len, int asc)
 {   
   std::vector<std::wstring> str(len);
   for (int i=0; i < len; i++) {order[i] = i; str[i] = x[i];}

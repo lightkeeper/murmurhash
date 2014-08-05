@@ -36,13 +36,13 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -115,7 +115,7 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <PrecompiledHeader />
       <WarningLevel>Level4</WarningLevel>
-      <TreatWarningAsError>true</TreatWarningAsError>
+      <TreatWarningAsError>false</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
@@ -178,6 +178,7 @@
     <ClCompile Include="MurmurHash3.cpp" />
     <ClCompile Include="MurmurHash3_wrapper.cpp" />
     <ClCompile Include="order.cpp" />
+    <ClCompile Include="order_tests.cpp" />
     <ClCompile Include="sha1.cpp" />
     <ClCompile Include="SuperFastHash.cpp" />
     <ClCompile Include="AvalancheTest.cpp" />
@@ -190,7 +191,6 @@
     <ClCompile Include="Random.cpp" />
     <ClCompile Include="Stats.cpp" />
     <ClCompile Include="Types.cpp" />
-    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="City.h" />
@@ -198,6 +198,7 @@
     <ClInclude Include="MurmurHash1.h" />
     <ClInclude Include="MurmurHash2.h" />
     <ClInclude Include="MurmurHash3.h" />
+    <ClInclude Include="order.h" />
     <ClInclude Include="sha1.h" />
     <ClInclude Include="AvalancheTest.h" />
     <ClInclude Include="DifferentialTest.h" />

@@ -72,9 +72,9 @@
     <ClCompile Include="Types.cpp">
       <Filter>Utils</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="MurmurHash3_wrapper.cpp" />
     <ClCompile Include="order.cpp" />
+    <ClCompile Include="order_tests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="City.h">
@@ -125,5 +125,6 @@
     <ClInclude Include="Types.h">
       <Filter>Utils</Filter>
     </ClInclude>
+    <ClInclude Include="order.h" />
   </ItemGroup>
 </Project>
